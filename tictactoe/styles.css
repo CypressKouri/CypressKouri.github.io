@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rock+Salt&display=swap');
+
+body{
+	background-color:#EDF2F4;
+	display:flex;
+	justify-content:center;
+	font-family: 'Bangers', cursive;
+}
+main{
+	text-align:center;
+}
+h1{
+	color:#1F7A8C;
+	font-size:80px;
+	text-shadow:5px 5px #931621;
+	margin:30px;
+}
+#board{
+	display:grid;
+	width:570px;
+	height:570px;
+	grid-template:1fr 1fr 1fr / 1fr 1fr 1fr;
+	grid-gap:10px;
+	background-color:#2B2D42;
+	border:20px solid #2B2D42;
+	box-shadow:10px 10px 20px rgba(0,0,0,0.5);
+	border-radius:20px;
+}
+#board > input{
+	background-color:#EDF2F4;
+	border-radius:20px;
+	border:none;
+	font-size:75px;
+	font-family: 'Rock Salt', cursive; 
+	font-weight:bolder;
+}
+#board > input:hover{
+	background-color:#D90429;
+	cursor:pointer;
+	transition: all 0.4s ease 0s;
+}
+button{
+  border: 3px solid #2B2D42;
+  padding: 10px 20px;
+  color: #2B2D42;
+  text-shadow:2px 2px 10px #EDF2F4;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+  letter-spacing:2px;
+  font-size: 2em;
+  margin-right: auto;
+  text-align: center;
+  width: 200px;
+  margin-top:20px;
+  font-weight: bold;
+  background-color: #2C8C99;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+	font-family: 'Bangers', cursive;
+}
+button:hover{
+	 color: #EDF2F4;
+  transition: all 0.4s ease 0s;
+  text-shadow:2px 2px 10px #2B2D42;
+}
+#container{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-color:rgba(0,0,0,1);
+	display:none;
+	justify-content:center;
+	align-items:center;
+}
+#popup{
+	width:600px;
+	height:500px;
+	border-radius:20px;
+	background-color:#EDF2F4; 
+	text-align:center;
+	position:relative;
+}
+#cat{
+	width:70%;
+}
+#x{
+	width:40px;
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+#x:hover{
+	cursor:pointer;
+}
+#popup > h2{
+	line-height:300px;
+	font-size:100px;
+}
